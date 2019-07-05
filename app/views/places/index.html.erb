@@ -28,9 +28,10 @@
   </div>
   <% end %>
 
+<% if photo.picture.url.present? %>
  <div class="col-12 col-sm-6">
   <blockquote>
-     <% if photo.picture.url.present? %>
+     
     <%= image_tag photo.picture.url %>
     <% end %>
     <br /> 
