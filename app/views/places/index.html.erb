@@ -9,6 +9,7 @@
    <h1><%= link_to place.name, place_path(place) %></h1><br />
    <i><%= place.address %></i><br /><br />
    <p><%= place.description %></p><br />
+  
 
    <% if place.user.present? %>
       <small><%= place.user.email %></small>
@@ -22,8 +23,7 @@
       <% end %>
         <%= place.comments.last.message %>
       <small><%= place.comments.last.user.email %></small>
-      <%= image_tag photo.picture.url %>
-  <b><%= photo.caption %></b> -
+      
     </blockquote>
   </div>
   <% end %>
