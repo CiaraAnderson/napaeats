@@ -28,14 +28,13 @@
   </div>
   <% end %>
 
-<% if place.photo.picture.present? %>
+<% if place.photos.present? %>
  <div class="col-12 col-sm-6">
   <blockquote>
      
-    <%= image_tag photo.picture.url %>
+ <%= image_tag place.photos.first.picture.url %>
     <% end %>
     <br /> 
-  <b><%= photo.caption %></b> -
   </blockquote>
 </div>
 
